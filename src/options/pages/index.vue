@@ -2,26 +2,8 @@
 
 <template>
   <div>
-    <a
-      href="https://vitejs.dev"
-      target="_blank"
-    >
-      <img
-        src="~/src/assets/vite.svg"
-        class="logo"
-        alt="Vite logo"
-      />
-    </a>
-    <a
-      href="https://vuejs.org/"
-      target="_blank"
-    >
-      <img
-        src="~/src/assets/vue.svg"
-        class="logo vue"
-        alt="Vue logo"
-      />
-    </a>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div>你好</div> 
   </div>
 </template>
 

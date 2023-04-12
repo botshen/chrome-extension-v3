@@ -1,6 +1,12 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  ajax-hook:
+    specifier: ^2.1.3
+    version: 2.1.3
+  ajax-hook-botshen:
+    specifier: ^1.0.1
+    version: 1.0.1
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -844,6 +850,14 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /ajax-hook-botshen@1.0.1:
+    resolution: {integrity: sha512-HJhyEDMa21fQjan861+Uv+yeZkcAcQGTjoH+iOXXsSpytakwyE2yCJJ45+O9gf3IAfYwxIYUqhi/gef2wW7qmg==}
+    dev: false
+
+  /ajax-hook@2.1.3:
+    resolution: {integrity: sha512-laElRlQjwhZihWONbGrPq/tYNCJlpPbu5YtjNghUrfRJgmxg6NiLbAoSbdmkN9a5+kMfgeHnCYE/GiSDJO7KjA==}
+    dev: false
 
   /ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}

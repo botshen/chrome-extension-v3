@@ -9,21 +9,46 @@
   "content_scripts": [
     {
       "all_frames": true,
-      "js": ["src/content-script/index.ts"],
-      "matches": ["*://*/*"],
-      "run_at": "document_end"
+      "js": [
+        "src/content-script/index.ts"
+      ],
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_start"
     }
   ],
-  "host_permissions": ["*://*/*"],
+  "host_permissions": [
+    "*://*/*"
+  ],
   "manifest_version": 3,
   "name": "vite-vue3-chrome-extension-v3",
   "options_page": "src/options/index.html",
-  "permissions": ["storage", "activeTab"],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
   "version": "1.0.0",
   "web_accessible_resources": [
     {
-      "matches": ["*://*/*"],
-      "resources": ["src/content-script/index.ts"]
+      "matches": [
+        "*://*/*"
+      ],
+      "resources": [
+        "src/content-script/index.ts",
+        "interceptor.js",
+        "ajaxhook.min.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "resources": [
+        "src/interceptor.js"
+      ]
     }
   ]
 }
