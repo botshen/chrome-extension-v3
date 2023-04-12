@@ -1,6 +1,5 @@
-// import  "./ajaxhook.min.js";
-import { proxy } from "ajax-hook-botshen";
-proxy({
+import  "./ajaxhook.min.js";
+ah.proxy({
   //请求发起前进入
   onRequest: (config, handler) => {
     console.log(config.url, 3)
